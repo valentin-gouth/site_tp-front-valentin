@@ -1,0 +1,24 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+  padding: 40px;
+  border-bottom: 1px solid #ccc;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  background: white;
+  width: 100%;
+  padding: 10px;
+}
+
+#top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}

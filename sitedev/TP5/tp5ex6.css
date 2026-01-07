@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.parallax {
+  height: 80vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg1 { background-image: url("alberta.jpg"); }
+.bg2 { background-image: url("alberta2.jpg"); }
+.bg3 { background-image: url("alberta3.jpg"); }
+
+.content {
+  padding: 80px;
+  background: white;
+  line-height: 1.7;
+}
+

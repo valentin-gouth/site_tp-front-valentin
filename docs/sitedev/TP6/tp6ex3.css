@@ -1,0 +1,44 @@
+/* styles/exercice3.css
+   Commentaires en français ; sélecteurs/attributs en anglais
+*/
+
+/* Reset simple */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;line-height:1.5;color:#111;background:#f7f8fa}
+
+/* contenu long pour scroll */
+.content{max-width:760px;margin:24px auto;padding:0 12px}
+.content h1{margin-bottom:16px;font-size:1.4rem}
+.content p{margin-bottom:14px;color:#222}
+
+/* ------- propeller (hélice) ------- */
+/* position fixed : l'image reste visible à l'écran pendant le scroll */
+.propeller {
+  position: fixed;          /* position fixe par rapport à la fenêtre */
+  right: 24px;              /* distance depuis le bord droit */
+  bottom: 24px;             /* distance depuis le bord bas */
+  width: 88px;              /* taille de l'image (ajuste selon ton image) */
+  height: 88px;
+  pointer-events: none;     /* la laisse "invisible" pour les clics */
+  transform-origin: 50% 50%;/* rotation autour du centre */
+  will-change: transform;   /* hint de perf pour navigateur */
+  transition: opacity .25s ease; /* petit fondu si on veut cacher */
+  opacity: 0.95;
+}
+
+/* animation CSS définie ici (rotation continue) */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* la classe appliquée via JS lance la rotation */
+.propeller.spinning {
+  animation: spin 0.6s linear infinite; /* vitesse : 0.6s par tour, linéaire */
+}
+
+/* petit responsive : réduire la taille sur écrans étroits */
+@media (max-width:480px) {
+  .propeller { width: 64px; height: 64px; right: 12px; bottom: 12px; }
+}
+

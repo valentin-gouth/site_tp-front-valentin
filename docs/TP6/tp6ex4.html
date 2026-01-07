@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>TP6 - Exo4 : Menu interactif</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="tp6ex4.css">
+</head>
+<body>
+
+  <!-- Bouton pour ouvrir/fermer le menu (mobile) -->
+  <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="mainNav">
+    Menu
+  </button>
+
+  <!-- Navigation principale -->
+  <nav id="mainNav" class="main-nav" aria-label="Navigation principale">
+    <ul>
+      <li><a href="#home">Accueil</a></li>
+
+      <!-- item avec sous-menu -->
+      <li class="has-sub">
+        <button class="sub-toggle" aria-expanded="false" aria-controls="sub1">
+          Services
+        </button>
+        <ul id="sub1" class="sub-menu" hidden>
+          <li><a href="#s1">Service 1</a></li>
+          <li><a href="#s2">Service 2</a></li>
+          <li><a href="#s3">Service 3</a></li>
+        </ul>
+      </li>
+
+      <li class="has-sub">
+        <button class="sub-toggle" aria-expanded="false" aria-controls="sub2">
+          Projets
+        </button>
+        <ul id="sub2" class="sub-menu" hidden>
+          <li><a href="#p1">Projet A</a></li>
+          <li><a href="#p2">Projet B</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenu principal factice -->
+  <main class="content">
+    <h1>Exercice 4 — Menu interactif</h1>
+    
+  </main>
+
+  <script src="tp6ex4.js"></script>
+</body>
+</html>
+

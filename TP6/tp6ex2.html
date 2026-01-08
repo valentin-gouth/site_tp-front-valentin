@@ -7,10 +7,20 @@
   <link rel="stylesheet" href="tp6ex2.css">
 </head>
 <body>
+<section class="description">
+  <h2>Analyse de l’exercice</h2>
+
+  <p>Connaissances mises en jeu : apprendre les animations css.</p>
+
+  <p>Niveau de difficulté : plutôt difficile</p>
+
+  <p>Intérêt pédagogique : maitrise des animations</p>
+
+  <p>Qualité du résultat : satisfait</p>
 
   <main class="container">
 
-    <!-- 1) Trois points animés (loader "..." décalé) -->
+    
     <section class="block loader-block" aria-label="Trois points animés">
       <h3>1 — Trois points animés</h3>
       <div class="dots" aria-hidden="true">
@@ -20,7 +30,7 @@
       </div>
     </section>
 
-    <!-- 2) Barres verticales 'vague' -->
+    
     <section class="block bars-block" aria-label="Barres verticales en vague">
       <h3>2 — Barres en vague</h3>
       <div class="bars" aria-hidden="true">
@@ -29,20 +39,20 @@
       </div>
     </section>
 
-    <!-- 3) Image qui tourne -->
+    
     <section class="block rotate-block" aria-label="Image qui tourne">
       <h3>3 — Image tournante</h3>
       <div class="rotator">
-        <!-- Remplace images/sample.jpg par l'image fournie -->
+        
         <img src="images/sample.jpg" alt="Image tournante" class="spin-img">
       </div>
     </section>
 
-    <!-- 4) Texte caractère par caractère, fond devient rouge, tremblement, disparition -->
+    
     <section class="block text-seq-block" aria-label="Texte animé caractère par caractère">
       <h3>4 — Texte séquentiel puis tremblement</h3>
       <div class="text-seq" id="textSeq" aria-live="polite">
-        <!-- Chaque caractère est dans un span pour animer séquentiellement -->
+        
         <p class="seq">
           <span>T</span><span>e</span><span>x</span><span>t</span><span>e</span>
           <span> </span>
@@ -51,28 +61,28 @@
       </div>
     </section>
 
-    <!-- 5) Bouton de soumission qui change d'aspect au clic -->
+    
     <section class="block button-block" aria-label="Bouton de soumission">
       <h3>5 — Bouton cliquable</h3>
       <button id="submitBtn" class="submit-btn" type="button">Soumettre</button>
     </section>
 
-    <!-- 6) Grille : éléments changent de forme avec décalage -->
+    
     <section class="block grid-block" aria-label="Grille animée">
       <h3>6 — Grille qui change de forme</h3>
       <div class="grid">
-        <!-- 9 éléments pour l'exemple -->
+     
         <div class="cell"></div><div class="cell"></div><div class="cell"></div>
         <div class="cell"></div><div class="cell"></div><div class="cell"></div>
         <div class="cell"></div><div class="cell"></div><div class="cell"></div>
       </div>
     </section>
 
-    <!-- 7) Texte en vague -->
+    
     <section class="block wave-text-block" aria-label="Texte en vague">
       <h3>7 — Texte en vague</h3>
       <p class="wave">
-        <!-- span par lettre pour l'effet de vague -->
+       
         <span>W</span><span>a</span><span>v</span><span>e</span><span> </span><span>T</span><span>e</span><span>x</span><span>t</span>
       </p>
     </section>

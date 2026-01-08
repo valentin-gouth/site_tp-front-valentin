@@ -1,0 +1,74 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; background: #eee; }
+
+.container {
+  position: relative;
+  width: 695px;
+  height: 695px;
+  margin: 0;
+}
+
+/* --- Style commun --- */
+.item {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #000;
+  border-radius: 0;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.85);
+  font-size: 28px;
+}
+
+/* --- Positionnement + couleurs --- */
+.item1 { left: 278px; top: 279px; width: 139px; height: 139px; background: #ED813E; }
+
+.item2 {
+  left: 417px;
+  top: 139px;
+  width: 138px;
+  height: 279px; /* prolongé vers le bas */
+  background: #B1F04A;
+}
+
+.item3 { left: 139px; top: 139px; width: 278px; height: 140px; background: #1DEE47; }
+
+.item4 { left: 139px; top: 279px; width: 139px; height: 277px; background: #4D55E9; }
+
+.item5 {
+  left: 278px;
+  top: 418px;
+  width: 417px;
+  height: 138px;
+  background: #F9B8E6;
+}
+
+.item6 {
+  left: 555px;
+  top: 0px;
+  width: 140px;
+  height: 418px; /* prolongé vers le bas jusqu'au bloc 5 */
+  background: #1CEEB3;
+}
+
+.item7 { left: 0px; top: 0px; width: 555px; height: 139px; background: #E4F582; }
+
+.item8 { left: 0px; top: 139px; width: 139px; height: 556px; background: #3B8591; }
+
+.item9 { left: 139px; top: 556px; width: 556px; height: 139px; background: #9EFBFD; }
+
+/* Ajustement taille badges pour petits blocs */
+.item1 .badge, .item4 .badge { font-size: 26px; width:64px; height:64px; }
+
+
+
